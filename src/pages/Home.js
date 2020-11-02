@@ -42,18 +42,6 @@ export default function Home({ setArticleCategory }) {
 				>
 					PoulpyBot
 				</h1>
-				<h5
-					style={{
-						position: 'absolute',
-						bottom: heightIntro === -1 ? '45vw' : '10%',
-						left: '5%',
-						fontFamily: "'Lora', serif",
-						color: data.colors.kTitleColor,
-						filter: 'drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.5))'
-					}}
-				>
-					Construit par le club robotique de l'IMT Atlantique
-				</h5>
 			</div>
 
 			<div style={{ position: 'relative' }}>
@@ -82,6 +70,18 @@ export default function Home({ setArticleCategory }) {
 					articleCategory={data.articleSection.sponsors}
 				/>
 			</div>
+			<h5
+				style={{
+					position: 'absolute',
+					top: heightIntro - 10,
+					left: '2%',
+					fontFamily: "'Lora', serif",
+					color: data.colors.kTitleColor,
+					filter: 'drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.5))'
+				}}
+			>
+				Construit par le club robotique d'IMT Atlantique
+			</h5>
 		</div>
 	);
 }
