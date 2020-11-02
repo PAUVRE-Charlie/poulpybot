@@ -5,7 +5,7 @@ import HomeBox from '../components/HomeBox';
 import data from '../data';
 
 export default function Home({ setArticleCategory }) {
-	const [ heightIntro, setHeightIntro ] = useState(0);
+	const [ heightIntro, setHeightIntro ] = useState(-1);
 
 	useEffect(
 		() => {
@@ -26,7 +26,7 @@ export default function Home({ setArticleCategory }) {
 
 	return (
 		<div>
-			<div style={{ height: heightIntro }}>
+			<div style={{ position: 'relative', height: heightIntro === -1 ? '60vw' : heightIntro }}>
 				<h1
 					style={{
 						position: 'relative',
@@ -37,11 +37,23 @@ export default function Home({ setArticleCategory }) {
 						letterSpacing: '-0.5vw',
 						fontFamily: "'Lora', serif",
 						color: data.colors.kTitleColor,
-						filter: 'drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.5))'
+						filter: 'drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.5))'
 					}}
 				>
 					PoulpyBot
 				</h1>
+				<h5
+					style={{
+						position: 'absolute',
+						bottom: '10%',
+						left: '5%',
+						fontFamily: "'Lora', serif",
+						color: data.colors.kTitleColor,
+						filter: 'drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.5))'
+					}}
+				>
+					Construit par le club robotique de l'IMT Atlantique
+				</h5>
 			</div>
 			<div style={{ position: 'relative' }}>
 				<HomeBox
