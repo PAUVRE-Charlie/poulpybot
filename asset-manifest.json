@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/poulpybot/static/css/main.e4878c71.chunk.css",
-    "main.js": "/poulpybot/static/js/main.540bec20.chunk.js",
-    "main.js.map": "/poulpybot/static/js/main.540bec20.chunk.js.map",
+    "main.js": "/poulpybot/static/js/main.75fe2354.chunk.js",
+    "main.js.map": "/poulpybot/static/js/main.75fe2354.chunk.js.map",
     "runtime-main.js": "/poulpybot/static/js/runtime-main.00a086f6.js",
     "runtime-main.js.map": "/poulpybot/static/js/runtime-main.00a086f6.js.map",
     "static/css/2.4b094e24.chunk.css": "/poulpybot/static/css/2.4b094e24.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.4b094e24.chunk.css",
     "static/js/2.92bcd6dc.chunk.js",
     "static/css/main.e4878c71.chunk.css",
-    "static/js/main.540bec20.chunk.js"
+    "static/js/main.75fe2354.chunk.js"
   ]
 }
