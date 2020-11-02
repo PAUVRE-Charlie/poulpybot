@@ -42,7 +42,13 @@ export default function Header({ articleCategory, setArticleCategory }) {
 			>
 				<Link
 					to={process.env.PUBLIC_URL + '/'}
-					style={{ color: window.location.pathname === '/' ? data.colors.kPrimaryColor : 'white' }}
+					style={{
+						color:
+							window.location.pathname === process.env.PUBLIC_URL + '/' ||
+							window.location.pathname === process.env.PUBLIC_URL
+								? data.colors.kPrimaryColor
+								: 'white'
+					}}
 					onClick={() => setArticleCategory('Articles')}
 				>
 					Accueil
