@@ -45,7 +45,7 @@ export default function Home({ setArticleCategory }) {
 				<h5
 					style={{
 						position: 'absolute',
-						bottom: '10%',
+						bottom: heightIntro === -1 ? '45vw' : '10%',
 						left: '5%',
 						fontFamily: "'Lora', serif",
 						color: data.colors.kTitleColor,
@@ -55,6 +55,7 @@ export default function Home({ setArticleCategory }) {
 					Construit par le club robotique de l'IMT Atlantique
 				</h5>
 			</div>
+
 			<div style={{ position: 'relative' }}>
 				<HomeBox
 					src={data.images.electronique}
