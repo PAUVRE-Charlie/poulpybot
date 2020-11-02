@@ -7,7 +7,7 @@ export default function ArticleCard({ article, setArticle }) {
 	return (
 		<Link
 			className="scaleDownAndReset"
-			to={'/articles/' + article.category + '/' + article.title}
+			to={process.env.PUBLIC_URL + '/articles/' + article.category + '/' + article.title}
 			onClick={() => setArticle(article)}
 			style={{
 				height: '7rem',

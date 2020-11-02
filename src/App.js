@@ -19,10 +19,14 @@ function App() {
 		<Router>
 			<CommonBackGround />
 			<Header id="headerId" articleCategory={articleCategory} setArticleCategory={setArticleCategory} />
-			<Route exact path="/" component={() => <Home setArticleCategory={setArticleCategory} />} />
 			<Route
 				exact
-				path="/articles/:articleSection"
+				path={process.env.PUBLIC_URL + '/'}
+				component={() => <Home setArticleCategory={setArticleCategory} />}
+			/>
+			<Route
+				exact
+				path={process.env.PUBLIC_URL + '/articles/:articleSection'}
 				component={({ match }) => (
 					<Articles
 						articleCategory={articleCategory}
@@ -34,7 +38,7 @@ function App() {
 			/>
 			<Route
 				exact
-				path="/articles/:articleSection/:articleId"
+				path={process.env.PUBLIC_URL + '/articles/:articleSection/:articleId'}
 				component={({ match }) => <Article article={article} />}
 			/>
 			<Footer />

@@ -30,33 +30,37 @@ export default function Footer() {
 				title="Navigation"
 				component={
 					<div className="ui list">
-						<Link className="ui item" to="/" style={{ color: data.colors.kSecondaryColor }}>
+						<Link
+							className="ui item"
+							to={process.env.PUBLIC_URL + '/'}
+							style={{ color: data.colors.kSecondaryColor }}
+						>
 							Accueil
 						</Link>
 						<Link
 							className="ui item"
-							to={'/articles/' + data.articleSection.robot}
+							to={process.env.PUBLIC_URL + '/articles/' + data.articleSection.robot}
 							style={{ color: data.colors.kSecondaryColor }}
 						>
 							{data.articleSectionTitle.robot}
 						</Link>
 						<Link
 							className="ui item"
-							to={'/articles/' + data.articleSection.coupe}
+							to={process.env.PUBLIC_URL + '/articles/' + data.articleSection.coupe}
 							style={{ color: data.colors.kSecondaryColor }}
 						>
 							{data.articleSectionTitle.coupe}
 						</Link>
 						<Link
 							className="ui item"
-							to={'/articles/' + data.articleSection.club}
+							to={process.env.PUBLIC_URL + '/articles/' + data.articleSection.club}
 							style={{ color: data.colors.kSecondaryColor }}
 						>
 							{data.articleSectionTitle.club}
 						</Link>
 						<Link
 							className="ui item"
-							to={'/articles/' + data.articleSection.sponsors}
+							to={process.env.PUBLIC_URL + '/articles/' + data.articleSection.sponsors}
 							style={{ color: data.colors.kSecondaryColor }}
 						>
 							{data.articleSectionTitle.sponsors}

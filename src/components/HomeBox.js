@@ -14,7 +14,7 @@ export default function HomeBox({ src, title, inverted, articleCategory }) {
 		<VizSensor
 			partialVisibility
 			delayedCall={true}
-			minTopValue={200}
+			minTopValue={100}
 			onChange={(isVisible) => {
 				if (isVisible) setVisible(isVisible);
 			}}
@@ -62,7 +62,11 @@ export default function HomeBox({ src, title, inverted, articleCategory }) {
 					>
 						{title}
 					</h1>
-					<Button text="En savoir plus..." inverted={inverted} link={'/articles/' + articleCategory} />
+					<Button
+						text="En savoir plus..."
+						inverted={inverted}
+						link={process.env.PUBLIC_URL + '/articles/' + articleCategory}
+					/>
 				</div>
 			</div>
 		</VizSensor>

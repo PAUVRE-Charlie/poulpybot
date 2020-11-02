@@ -22,7 +22,7 @@ export default function ArticleCategoryBox({
 				alignItems: 'center'
 			}}
 		>
-			<Link to={'/articles/' + articleSectionBefore}>
+			<Link to={process.env.PUBLIC_URL + '/articles/' + articleSectionBefore}>
 				<img
 					src={data.icons.arrowLeft}
 					alt="arrow_right"
@@ -62,7 +62,7 @@ export default function ArticleCategoryBox({
 						})}
 				</div>
 			</div>
-			<Link to={'/articles/' + articleSectionNext}>
+			<Link to={process.env.PUBLIC_URL + '/articles/' + articleSectionNext}>
 				<img
 					src={data.icons.arrowRight}
 					alt="arrow_right"

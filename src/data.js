@@ -3,29 +3,29 @@ const data = {
 		socialMedia: [
 			{
 				title: 'facebook',
-				image: '../assets/icons/facebook_logo.svg',
+				image: process.env.PUBLIC_URL + '/assets/icons/facebook_logo.svg',
 				link: 'https://www.facebook.com/IMTAtlantique'
 			},
 			{
 				title: 'youtube',
-				image: '../assets/icons/youtube_logo.svg',
+				image: process.env.PUBLIC_URL + '/assets/icons/youtube_logo.svg',
 				link: 'https://www.youtube.com/c/IMTAtlantique/videos'
 			},
 			{
 				title: 'linkedin',
-				image: '../assets/icons/linkedin_logo.svg',
+				image: process.env.PUBLIC_URL + '/assets/icons/linkedin_logo.svg',
 				link: 'https://www.linkedin.com/school/imt-atlantique/'
 			}
 		],
-		arrowLeft: '../assets/icons/arrow_left_blue.svg',
-		arrowRight: '../assets/icons/arrow_right_blue.svg'
+		arrowLeft: process.env.PUBLIC_URL + '/assets/icons/arrow_left_blue.svg',
+		arrowRight: process.env.PUBLIC_URL + '/assets/icons/arrow_right_blue.svg'
 	},
 	images: {
-		electronique: '../assets/images/electronique.svg',
-		coupe: '../assets/images/coupe.svg',
-		club_nantes: '../assets/images/club_nantes.svg',
-		lydia: '../assets/images/lydia.svg',
-		background: '../assets/images/background.svg'
+		electronique: process.env.PUBLIC_URL + '/assets/images/electronique.svg',
+		coupe: process.env.PUBLIC_URL + '/assets/images/coupe.svg',
+		club_nantes: process.env.PUBLIC_URL + '/assets/images/club_nantes.svg',
+		lydia: process.env.PUBLIC_URL + '/assets/images/lydia.svg',
+		background: process.env.PUBLIC_URL + '/assets/images/background.svg'
 	},
 	colors: {
 		kPrimaryColor: '#02B8DF',
@@ -50,7 +50,7 @@ const data = {
 		{
 			_id: 1,
 			title: 'Electronique',
-			image: '../assets/images/electronique.svg',
+			image: process.env.PUBLIC_URL + '/assets/images/electronique.svg',
 			category: 'le-robot',
 			author: 'Alexis Hamel',
 			body: (
@@ -94,7 +94,7 @@ const data = {
 		{
 			_id: 2,
 			title: 'Electronique',
-			image: '../assets/images/electronique.svg',
+			image: process.env.PUBLIC_URL + '/assets/images/electronique.svg',
 			category: 'le-robot',
 			author: 'Alexis Hamel',
 			body: (
@@ -138,7 +138,7 @@ const data = {
 		{
 			_id: 3,
 			title: 'Electronique',
-			image: '../assets/images/electronique.svg',
+			image: process.env.PUBLIC_URL + '/assets/images/electronique.svg',
 			category: 'le-robot',
 			author: 'Alexis Hamel',
 			body: (
@@ -182,7 +182,7 @@ const data = {
 		{
 			_id: 4,
 			title: 'Electronique',
-			image: '../assets/images/electronique.svg',
+			image: process.env.PUBLIC_URL + '/assets/images/electronique.svg',
 			category: 'la-coupe',
 			author: 'Alexis Hamel',
 			body: (
@@ -226,7 +226,7 @@ const data = {
 		{
 			_id: 5,
 			title: 'Electronique',
-			image: '../assets/images/electronique.svg',
+			image: process.env.PUBLIC_URL + '/assets/images/electronique.svg',
 			category: 'la-coupe',
 			author: 'Alexis Hamel',
 			body: (
@@ -270,7 +270,7 @@ const data = {
 		{
 			_id: 6,
 			title: 'Electronique',
-			image: '../assets/images/electronique.svg',
+			image: process.env.PUBLIC_URL + '/assets/images/electronique.svg',
 			category: 'la-coupe',
 			author: 'Alexis Hamel',
 			body: (
@@ -314,7 +314,7 @@ const data = {
 		{
 			_id: 7,
 			title: 'Electronique',
-			image: '../assets/images/electronique.svg',
+			image: process.env.PUBLIC_URL + '/assets/images/electronique.svg',
 			category: 'la-coupe',
 			author: 'Alexis Hamel',
 			body: (
@@ -358,7 +358,7 @@ const data = {
 		{
 			_id: 8,
 			title: 'Electronique',
-			image: '../assets/images/electronique.svg',
+			image: process.env.PUBLIC_URL + '/assets/images/electronique.svg',
 			category: 'le-club',
 			author: 'Alexis Hamel',
 			body: (
@@ -402,7 +402,7 @@ const data = {
 		{
 			_id: 9,
 			title: 'Electronique',
-			image: '../assets/images/electronique.svg',
+			image: process.env.PUBLIC_URL + '/assets/images/electronique.svg',
 			category: 'le-club',
 			author: 'Alexis Hamel',
 			body: (
@@ -446,7 +446,7 @@ const data = {
 		{
 			_id: 10,
 			title: 'Electronique',
-			image: '../assets/images/electronique.svg',
+			image: process.env.PUBLIC_URL + '/assets/images/electronique.svg',
 			category: 'les-sponsors',
 			author: 'Alexis Hamel',
 			body: (
@@ -490,7 +490,7 @@ const data = {
 		{
 			_id: 11,
 			title: 'Electronique',
-			image: '../assets/images/electronique.svg',
+			image: process.env.PUBLIC_URL + '/assets/images/electronique.svg',
 			category: 'les-sponsors',
 			author: 'Alexis Hamel',
 			body: (
@@ -534,7 +534,7 @@ const data = {
 		{
 			_id: 12,
 			title: 'Electronique',
-			image: '../assets/images/electronique.svg',
+			image: process.env.PUBLIC_URL + '/assets/images/electronique.svg',
 			category: 'les-sponsors',
 			author: 'Alexis Hamel',
 			body: (
@@ -578,7 +578,7 @@ const data = {
 		{
 			_id: 13,
 			title: 'Electronique',
-			image: '../assets/images/electronique.svg',
+			image: process.env.PUBLIC_URL + '/assets/images/electronique.svg',
 			category: 'les-sponsors',
 			author: 'Alexis Hamel',
 			body: (
@@ -622,7 +622,7 @@ const data = {
 		{
 			_id: 14,
 			title: 'Electronique',
-			image: '../assets/images/electronique.svg',
+			image: process.env.PUBLIC_URL + '/assets/images/electronique.svg',
 			category: 'les-sponsors',
 			author: 'Alexis Hamel',
 			body: (

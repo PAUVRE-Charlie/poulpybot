@@ -41,7 +41,7 @@ export default function Header({ articleCategory, setArticleCategory }) {
 				}}
 			>
 				<Link
-					to="/"
+					to={process.env.PUBLIC_URL + '/'}
 					style={{ color: window.location.pathname === '/' ? data.colors.kPrimaryColor : 'white' }}
 					onClick={() => setArticleCategory('Articles')}
 				>
@@ -58,28 +58,28 @@ export default function Header({ articleCategory, setArticleCategory }) {
 							text="Le robot"
 							style={{ color: data.colors.kSecondaryColor }}
 							as={Link}
-							to={'/articles/' + data.articleSection.robot}
+							to={process.env.PUBLIC_URL + '/articles/' + data.articleSection.robot}
 							onClick={() => onChangeArticle(data.articleSectionTitle.robot)}
 						/>
 						<Dropdown.Item
 							text="La Coupe"
 							style={{ color: data.colors.kSecondaryColor }}
 							as={Link}
-							to={'/articles/' + data.articleSection.coupe}
+							to={process.env.PUBLIC_URL + '/articles/' + data.articleSection.coupe}
 							onClick={() => onChangeArticle(data.articleSectionTitle.coupe)}
 						/>
 						<Dropdown.Item
 							text="Le club"
 							style={{ color: data.colors.kSecondaryColor }}
 							as={Link}
-							to={'/articles/' + data.articleSection.club}
+							to={process.env.PUBLIC_URL + '/articles/' + data.articleSection.club}
 							onClick={() => onChangeArticle(data.articleSectionTitle.club)}
 						/>
 						<Dropdown.Item
 							text="Les sponsors"
 							style={{ color: data.colors.kSecondaryColor }}
 							as={Link}
-							to={'/articles/' + data.articleSection.sponsors}
+							to={process.env.PUBLIC_URL + '/articles/' + data.articleSection.sponsors}
 							onClick={() => onChangeArticle(data.articleSectionTitle.sponsors)}
 						/>
 					</Dropdown.Menu>
