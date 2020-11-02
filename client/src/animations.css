@@ -1,0 +1,4 @@
+.scaleDownAndReset:hover {
+	transform: scale(0.97);
+	transition: all 200ms ease-in-out;
+}

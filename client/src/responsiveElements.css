@@ -1,0 +1,70 @@
+.headerTitle {
+	flex: 1;
+	align-self: center;
+	margin-left: 5vw;
+}
+
+.homeBoxContainer {
+	position: relative;
+	width: 80%;
+	height: 35vw;
+	margin: 5rem 10%;
+	filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.articleCategoryTitle {
+	text-align: center;
+	font-size: 7vh;
+	letter-spacing: -0.4rem;
+	font-weight: bold;
+	margin: 0;
+	filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.arrowCategory {
+	margin: 3rem;
+	height: 3rem;
+	font-size: 3rem;
+}
+
+.titleSectionTitle {
+	font-size: 11vh;
+	letter-spacing: -0.2rem;
+	line-height: 11vh;
+	margin-bottom: 1vh;
+	font-weight: bold;
+	margin: 0;
+}
+
+@media screen and (max-width: 40rem) {
+	.articleScreenText {
+		padding: 2rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.headerTitle {
+		display: none;
+	}
+
+	.homeBoxContainer {
+		width: 100%;
+		height: 35vw;
+		margin: 2rem 0%;
+	}
+
+	.articleCategoryTitle {
+		font-size: 11vw;
+		letter-spacing: -0.2rem;
+	}
+
+	.arrowCategory {
+		margin: 1rem;
+		height: 2rem;
+		font-size: 2rem;
+	}
+
+	.titleSectionTitle {
+		font-size: 13vw;
+	}
+}
